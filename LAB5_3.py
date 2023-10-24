@@ -32,12 +32,13 @@ def j(x):
     return s
 
 
+kg = (kk - kp) / n
 k = kp
 
 while k <= kk:
     z = j(k) + j(k - 1) ** 2 + 2 * j(1)
     print('|   {0}   |   {1}   |'.format(str(round(k, 4)), str(round(z, 4))))
-    k += n
+    k += kg
 
 
 print('--------------------')
